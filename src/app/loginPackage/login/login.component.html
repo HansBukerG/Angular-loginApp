@@ -1,0 +1,22 @@
+<div class="container border rounded mt-5 p-3">
+    <form [formGroup]="formularioLogIn" (ngSubmit)="logIn()">
+        <div class="row">
+            <h2>Login</h2>
+        </div>
+        <fieldset>
+            <div class="row align-items-center mb-3">
+                <div class="col-sm-2"><label for="">Usuario</label></div>
+                <div class="col"><input formControlName="usuario" type="text" class="form-control" placeholder="ingrese su usuario."></div>
+            </div>
+            <div class="row align-items-center mb-3">
+                <div class="col-sm-2"><label for="">Contraseña</label></div>
+                <div class="col"><input formControlName="password" type="password" class="form-control" placeholder="ingrese su contraseña."></div>
+            </div>
+        </fieldset>
+        <div class="row text-center">
+            <div class="col">
+                <button class="btn btn-primary" type="submit">Ingresar</button>
+            </div>
+        </div>
+    </form>
+</div>

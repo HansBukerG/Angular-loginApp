@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row" >
+      <div class="col-4" *ngFor="let item of personas">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Persona</h3>
+            <p class="card-text"><label >Nombre: {{item.nombre}}</label></p>
+            <p class="card-text"><label >Apellido: {{item.apellido}}</label></p>
+            <p class="card-text"><button type="button" class="btn btn-primary" (click)="eliminarPersona(item)">Eliminar</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

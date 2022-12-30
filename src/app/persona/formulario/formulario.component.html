@@ -1,0 +1,18 @@
+<div class="container border rounded mb-5">
+    <div class="row mb-2">
+        <h2>Ingreso Persona</h2>
+    </div>
+    <form [formGroup]="formulario" (ngSubmit)="submitFormulario()">
+        <div class="row mb-2">
+            <div class="col-sm-1"><label for="">Nombre:</label></div>
+            <div class="col-sm-11"> <input formControlName="nombre" type="text" class="form-control" placeholder="Nombre:"> </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-sm-1"><label for="">Apellido:</label></div>
+            <div class="col-sm-11"> <input formControlName="apellido" type="text" class="form-control" placeholder="Nombre:"> </div>
+        </div>
+        <div class="row mb-2 justify-content-center">
+            <div class="col-sm-1"><button type="submit" class="btn btn-primary">Ingresar:</button></div>
+        </div>
+    </form>
+</div>
